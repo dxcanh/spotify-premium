@@ -255,11 +255,18 @@ function App() {
 
 <!-- Contributing -->
 ## :wave: Contributing
-
 <a href="https://github.com/dxcanh/spotify-premium/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=dxcanh/spotify-premium" />
+=======
+<a href="https://github.com/dxcanh">
+  <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
 </a>
-
+<a href="https://github.com/ducle063">
+  <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
+</a>
+<a href="https://github.com/TranHungDuc">
+  <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
+</a>
 
 Contributions are always welcome!
 

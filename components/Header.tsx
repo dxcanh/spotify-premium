@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({
     children,
     className
 }) => {
-    // const router = useRouter();
+    const router = useRouter();
     const handleLogout = () => {
         //
     }
@@ -32,13 +32,13 @@ const Header: React.FC<HeaderProps> = ({
                 className="hidden md:flex gap-x-2 items-center"
                 >
                     <button
-                    //onClick = {() => router.back()}
+                    onClick = {() => router.back()}
                     className="rounded-full bg-black flex items-center justify-center hover:opacity-75 transition"
                     >
                         <RxCaretLeft size = {40} />
                     </button>
                     <button
-                    //onClick = {() => router.forward()}
+                    onClick = {() => router.forward()}
                     className="rounded-full bg-black flex items-center justify-center hover:opacity-75 transition"
                     >
                         <RxCaretRight size = {40} />
