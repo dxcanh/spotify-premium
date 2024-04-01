@@ -18,7 +18,7 @@ Removed sections:
 
 <div align="center">
 
-  <img src="assets/logo.png" alt="logo" width="200" height="auto" />
+  <img src="assets/favicon.ico" alt="logo" width="200" height="auto" />
   <h1>Awesome Readme Template</h1>
   
   <p>
