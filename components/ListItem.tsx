@@ -15,10 +15,10 @@ const ListItem: React.FC<ListItemProps> = ({
     href
 }) => {
 
-    //const router = useRouter();
+    const router = useRouter();
     const onClick = () => {
         //
-        // router.push(href);
+         router.push(href);
     }
     return (
         <button
