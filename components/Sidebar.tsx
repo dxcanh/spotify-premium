@@ -58,9 +58,8 @@ const Sidebar: React.FC<SidebarProps> = ({
                     >
                         {routes.map((item) => (
                             <SidebarItem
-                            key={item.label}
-                            {...item}
-                            />
+                                children={undefined} key={item.label}
+                                {...item}                            />
                         ))}
                     </div>
 

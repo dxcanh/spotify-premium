@@ -10,10 +10,10 @@ Maybe you can mention me or this repo in the acknowledgements too
 
 
   <img src="assets/favicon.ico" alt="logo" width="200" height="auto" />
-  <h1>Awesome Readme Template</h1>
+  <h1>Spotify Premium</h1>
   
   <p>
-    An awesome README template for your projects! 
+    Free premium for everyone! 
   </p>
   
   
