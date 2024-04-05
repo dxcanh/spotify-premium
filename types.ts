@@ -1,7 +1,5 @@
 import Stripe from "stripe";
 
-improt Stripe from "stripe";
-
 export interface UserDetails {
     id: string;
     first_name: string;
@@ -42,7 +40,7 @@ export interface Subcription {
     status?: Stripe.Subscription.Status;
     metadata?: Stripe.Metadata;
     price_id?: string;
-    quantity?: string;
+    quantity?: number;
     cancel_at_period_end?: boolean;
     created: string;
     current_period_start: string;
