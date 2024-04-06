@@ -6,6 +6,7 @@ import SupabaseProvider from "@/providers/SupabaseProvider";
 import UserProvider from "@/providers/UserProvider";
 import ModalProvider from "@/providers/ModalProvider";
 import ToasterProvider from "@/providers/ToasterProvider";
+import Player from "@/components/Player";
  
 const font = Figtree({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
             <Sidebar>
               {children}
             </Sidebar>
+            <Player></Player>
           </UserProvider>
         </SupabaseProvider>
       </body>
