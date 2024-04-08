@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 "use client";
 
 import { usePathname } from "next/navigation";
@@ -7,13 +8,16 @@ import Box from "./Box";
 import { useMemo } from "react";
 import SidebarItem from "./SidebarItem";
 import Library from "./Library";
+import { Song } from "@/types";
 
 interface SidebarProps {
     children: React.ReactNode;
+    songs: Song[]
 }
 
 const Sidebar: React.FC<SidebarProps> = ({
-    children
+    children,
+    songs
 }) => {
     const pathname = usePathname();
 
@@ -58,14 +62,16 @@ const Sidebar: React.FC<SidebarProps> = ({
                     >
                         {routes.map((item) => (
                             <SidebarItem
-                                children={undefined} key={item.label}
-                                {...item}                            />
+                                children={undefined} 
+                                key={item.label}
+                                {...item}                            
+                            />
                         ))}
                     </div>
 
             </Box>
             <Box className="overflow-y-auto h-full">
-                <Library/>
+                <Library songs={songs}/>
             </Box>
         </div>
         <main
