@@ -14,8 +14,9 @@ import Modal from "./Modal";
 import Input from "./Input";
 import Button from "./Button";
 
-const uploadModal = () => {
+const UploadModal = () => {
     const uploadModal = useUploadModal();
+    
     const [isLoading, setIsLoading] = useState(false);
     const { user } = useUser();
     const supabaseClient = useSupabaseClient();
@@ -171,4 +172,4 @@ const uploadModal = () => {
     );
 }
 
-export default uploadModal;
+export default UploadModal;
