@@ -84,7 +84,7 @@ const uploadModal = () => {
                 const {
                     error: supabaseError
                 } = await supabaseClient
-                    .from('song')
+                    .from('songs')
                     .insert({
                         user_id: user.id,
                         title: values.title,
