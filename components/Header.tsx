@@ -69,11 +69,11 @@ const Header: React.FC<HeaderProps> = ({
                 >
                     <button
                     className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition">
-                        <HiHome className = "text-back" size ={20}/>
+                        <HiHome className = "text-black" size ={20}/>
                     </button>
                     <button
                     className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition">
-                        <BiSearch className = "text-back" size ={20}/>
+                        <BiSearch className = "text-black" size ={20}/>
                     </button>
 
                 </div>
