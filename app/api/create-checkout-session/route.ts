@@ -18,7 +18,7 @@ export async function POST(
 
         const { data: { user } } = await supabase.auth.getUser();
 
-        const customer = createOrRetrieveCustomer({
+        const customer = await createOrRetrieveCustomer({
             uuid: user?.id || '',
             email: user?.email || ''
         });
@@ -38,10 +38,10 @@ export async function POST(
             mode: 'subscription',
             allow_promotion_codes: true,
             subscription_data: {
-                trial_from_plan: true,
+                trial_period_days: 7, 
                 metadata
             }
-        }, undefined);
+        });
 
         return NextResponse.json({ sessionId: session.id });
     } catch (error: any) {

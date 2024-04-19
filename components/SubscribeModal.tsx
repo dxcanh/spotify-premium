@@ -10,13 +10,14 @@ import Button from "./Button";
 import toast from "react-hot-toast";
 import { postData } from "@/libs/helpers";
 import { getStripe } from "@/libs/stripeClient";
+import useSubscribeModal from "@/hooks/useSubscribeModal";
 
 interface SubscribeModalProps {
     products: ProductWithPrice[];
 }
 
 const formatPrice = (price: Price) => {
-    const priceString = new Intl.NumberFormat('vi-VN', {
+    const priceString = new Intl.NumberFormat('en-US', {
         style: 'currency',
         currency: price.currency,
         minimumFractionDigits: 0
@@ -29,9 +30,15 @@ const SubscribeModal: React.FC<SubscribeModalProps> = ({
     products
 }) => {
 
+    const subscribeModal = useSubscribeModal();
     const { user, isLoading, subscription } = useUser();
-
     const [priceIdLoading, setPriceIdLoading] = useState<string>();
+
+    const onChange = (open: boolean) => {
+        if (!open) {
+            subscribeModal.onClose();
+        }
+    }
 
     const handleCheckout = async (price: Price) => {
         setPriceIdLoading(price.id);
@@ -48,7 +55,7 @@ const SubscribeModal: React.FC<SubscribeModalProps> = ({
 
         try {
             const { sessionId } = await postData({
-                url: '/api/create-checkout-sesion',
+                url: '/api/create-checkout-session',
                 data: { price }
             });
 
@@ -106,8 +113,8 @@ const SubscribeModal: React.FC<SubscribeModalProps> = ({
         <Modal
             title="Only for Premium users"
             description="Listen to music with Spotify Premium"
-            isOpen
-            onChange={() => {}}
+            isOpen={subscribeModal.isOpen}
+            onChange={onChange}
         >
             {content}
         </Modal>
