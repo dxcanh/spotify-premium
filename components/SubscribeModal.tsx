@@ -11,7 +11,8 @@ import toast from "react-hot-toast";
 import { postData } from "@/libs/helpers";
 import { getStripe } from "@/libs/stripeClient";
 import useSubscribeModal from "@/hooks/useSubscribeModal";
-
+import useTransactionModal from "@/hooks/useTransactionModal";
+import useAuthModal from "@/hooks/useAuthModal";
 interface SubscribeModalProps {
     products: ProductWithPrice[];
 }
@@ -31,6 +32,8 @@ const SubscribeModal: React.FC<SubscribeModalProps> = ({
 }) => {
 
     const subscribeModal = useSubscribeModal();
+    const transactionModal = useTransactionModal();
+    const authModal = useAuthModal();
     const { user, isLoading, subscription } = useUser();
     const [priceIdLoading, setPriceIdLoading] = useState<string>();
 
@@ -53,19 +56,7 @@ const SubscribeModal: React.FC<SubscribeModalProps> = ({
             return toast.error('Already subscribed');
         }
 
-        try {
-            const { sessionId } = await postData({
-                url: '/api/create-checkout-session',
-                data: { price }
-            });
-
-            const stripe = await getStripe();
-            stripe?.redirectToCheckout({ sessionId });
-        } catch (error) {
-            toast.error((error as Error)?.message);
-        } finally {
-            setPriceIdLoading(undefined);
-        }
+        authModal.onOpen();
     };
 
     let content = (
