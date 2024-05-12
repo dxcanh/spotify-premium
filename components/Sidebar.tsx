@@ -74,6 +74,16 @@ const Sidebar: React.FC<SidebarProps> = ({
                     </div>
 
             </Box>
+            <Box className="overflow-y-auto h-half">
+                <div className="
+                    flex
+                    flex-col
+                    gap-y-4
+                    px-5
+                    py-4
+                    "><Library songs={songs}/></div>
+                
+            </Box>
             <Box className="overflow-y-auto h-full">
                 <Library songs={songs}/>
             </Box>
