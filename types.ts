@@ -9,6 +9,17 @@ export interface Song {
     image_path: string;
 };
 
+export interface Artist {
+    id: string;
+    author: string;
+    picture: string;
+    description: string;
+    followers: number;
+    facebook: string;
+    instagram: string;
+    linkedin: string;
+};
+
 export interface UserDetails {
     id: string;
     first_name: string;

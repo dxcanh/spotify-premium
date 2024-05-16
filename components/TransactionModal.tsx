@@ -9,9 +9,10 @@ import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { useEffect } from "react";
 
-import useTransactionModal from "@/hooks/useTransactionModal";
+import useAuthModal from "@/hooks/useAuthModal";
 
 import Modal from "./Modal";
+import useTransactionModal from "@/hooks/useTransactionModal";
 
 const TransactionModal = () => {
     const supabaseClient = useSupabaseClient();
@@ -33,9 +34,30 @@ const TransactionModal = () => {
     }
 
     return (
-       <div>
-        oke
-       </div>
+        <Modal
+            title="Welcome back!"
+            description="Log in to your account and enjoy wonderful songs"
+            isOpen={isOpen}
+            onChange={onChange}    
+        >
+            <Auth 
+                theme="dark"
+                magicLink
+                providers={["github"]}
+                supabaseClient={supabaseClient}
+                appearance={{
+                    theme: ThemeSupa,
+                    variables: {
+                        default: {
+                            colors: {
+                                brand: '#404040',
+                                brandAccent: '#22c55e'
+                            }
+                        }
+                    }
+                }} 
+            />
+        </Modal>
     );
 }
 

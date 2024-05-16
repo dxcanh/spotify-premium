@@ -50,6 +50,9 @@ const SongItem : React.FC<SongItemProps> = ({
                     src={imagePath || 'images/liked.png'}
                     fill
                     alt="Image" 
+                    loader={({src}) => {
+                        return src;
+                    }}
                 />        
             </div>
             <div className="flex flex-col items-start w-full pt-4 gap-y-1">
