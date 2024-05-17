@@ -38,8 +38,6 @@ export default async function RootLayout({
               {children}
             </Sidebar>
             <Player/>
-              
-        
           </UserProvider>
         </SupabaseProvider>
       </body>
