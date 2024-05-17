@@ -27,7 +27,7 @@ export default async function Home() {
           mt-4"
           >
             <ListItem
-            image = "/image/Liked.png"
+            image = "/image/liked.png"
             name="Liked songs"
             href = "liked"
             />

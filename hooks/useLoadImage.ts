@@ -8,12 +8,7 @@ const useLoadImage = (song: Song) => {
         return null;
     }
 
-    const { data: imageData } = supabaseClient
-        .storage
-        .from('images')
-        .getPublicUrl(song.image_path);
-    
-    return imageData.publicUrl;
+    return song.image_path;
 };
 
 export default useLoadImage;

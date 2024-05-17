@@ -14,7 +14,7 @@ const SongItem : React.FC<SongItemProps> = ({
     data,
     onClick
 }) => {
-    const imagePath = useLoadImage(data);
+    const imagePath = data.image_path;
     return (
         <div
             onClick={() => onClick(data.id)}
