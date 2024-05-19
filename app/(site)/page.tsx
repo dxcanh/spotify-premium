@@ -17,7 +17,7 @@ export default async function Home() {
           <h1
           className="text-white text-3xl font-semibold"
           >
-            HELLO MTFK
+            Welcome to Spotify Premium!
           </h1>
           <div
           className="grid gird-cols-1 sm:grid-cols-2
