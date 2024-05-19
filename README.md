@@ -84,10 +84,6 @@ Maybe you can mention me or this repo in the acknowledgements too
 <!-- Screenshots -->
 ### :camera: Screenshots
 
-<div align="center"> 
-  <img src="https://drive.google.com/file/d/1B7vTgs3DghFBUd89QQPVnItbNW3hjTzm/view?usp=sharing" alt="screenshot" />
-</div>
-
 
 <!-- TechStack -->
 ### :space_invader: Tech Stack
