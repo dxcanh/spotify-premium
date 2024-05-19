@@ -1,14 +1,5 @@
 import Stripe from "stripe";
 
-export interface Upload {
-    id: string;
-    user_id: string;
-    author: string;
-    title: string;
-    song_path: string;
-    image_path: string;
-};
-
 export interface Song {
     id: string;
     user_id: string;
@@ -16,6 +7,7 @@ export interface Song {
     title: string;
     song_path: string;
     image_path: string;
+    type: string;
 };
 
 export interface Artist {
