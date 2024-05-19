@@ -135,21 +135,37 @@ Maybe you can mention me or this repo in the acknowledgements too
 <!-- Features -->
 ### :dart: Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Login/Logout
+- Listen to music
+- Like song
+- Upload song
 
 <!-- Color Reference -->
-### :art: Color Reference
+### Personas:
+Persona: Duc, the Casual Listener
+Age: 28
+Occupation: Marketing Specialist
+Location: Ha Noi, Viet Nam
+Interests: Fitness, traveling, cooking, pop music
+Tech Savviness: Moderate
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
-| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
-| Accent Color | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
-| Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
+Background:
+John is a busy marketing specialist working in a fast-paced environment. He uses music primarily as a backdrop to his daily activities, such as commuting, working out, and cooking. He prefers mainstream pop music and enjoys discovering new hits but doesn’t have the time to dig deep into different genres.
 
+Goals:
+Find new popular tracks easily.
+Have a seamless music experience while multitasking.
+Discover music that matches his mood or activity.
+Pain Points:
+Limited time to explore and find new music.
+Annoyance with ads interrupting his listening experience.
+Difficulty in finding curated playlists that match his specific activities, like working out or relaxing.
 
+### User Stories:
+1. As a user, I want the app to provide lyrics, artist bios, and other relevant information about the songs I'm listening to.
+2. As a user, I want the app to provide a seamless listening experience across different devices.
+3. As a user, I want the app to curate themed playlists for different occasions or activities.
+4. As a user, I want upload song for everyone to listen to.
 <!-- Env Variables -->
 ### :key: Environment Variables
 
