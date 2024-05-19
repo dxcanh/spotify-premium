@@ -39,7 +39,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 </p>
    
 <h4>
-    <a href="[https://drive.google.com/file/d/11eunTHdIIKtQPzo5yBobs58woq2NpupV/view?usp=sharing]">View Demo</a>
+    <a href="https://drive.google.com/file/d/11eunTHdIIKtQPzo5yBobs58woq2NpupV/view?usp=sharing">View Demo</a>
   <span> · </span>
     <a href="https://github.com/dxcanh/spotify-premium">Documentation</a>
   <span> · </span>
