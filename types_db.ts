@@ -180,6 +180,46 @@ export type Database = {
           },
         ]
       }
+
+      upload_songs: {
+        Row: {
+          author: string | null
+          created_at: string
+          id: number
+          image_path: string | null
+          song_path: string | null
+          title: string | null
+          user_id: string | null
+        }
+        Insert: {
+          author?: string | null
+          created_at?: string
+          id?: number
+          image_path?: string | null
+          song_path?: string | null
+          title?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          author?: string | null
+          created_at?: string
+          id?: number
+          image_path?: string | null
+          song_path?: string | null
+          title?: string | null
+          user_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "upload_songs_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "users"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+
       subscriptions: {
         Row: {
           cancel_at: string | null
