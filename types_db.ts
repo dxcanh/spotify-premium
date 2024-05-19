@@ -151,6 +151,7 @@ export type Database = {
           song_path: string | null
           title: string | null
           user_id: string | null
+          type: string
         }
         Insert: {
           author?: string | null
@@ -160,6 +161,7 @@ export type Database = {
           song_path?: string | null
           title?: string | null
           user_id?: string | null
+          type: string
         }
         Update: {
           author?: string | null
@@ -169,6 +171,7 @@ export type Database = {
           song_path?: string | null
           title?: string | null
           user_id?: string | null
+          type: string
         }
         Relationships: [
           {
@@ -190,6 +193,7 @@ export type Database = {
           song_path: string | null
           title: string | null
           user_id: string | null
+          type: string
         }
         Insert: {
           author?: string | null
@@ -199,6 +203,7 @@ export type Database = {
           song_path?: string | null
           title?: string | null
           user_id?: string | null
+          type?: string
         }
         Update: {
           author?: string | null
@@ -208,6 +213,7 @@ export type Database = {
           song_path?: string | null
           title?: string | null
           user_id?: string | null
+          type?: string
         }
         Relationships: [
           {

@@ -9,7 +9,7 @@ import ToasterProvider from "@/providers/ToasterProvider";
 import getSongsByUserId from "@/actions/getSongsByUserId";
 import getActiveProductsWithPrices from "@/actions/getActiveProductsWithPrices";
 import UploadPlayer from "@/components/UploadPlayer";
- 
+import Player from "@/components/Player";
 const font = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export default async function RootLayout({
             <Sidebar songs={userSongs}>
               {children}
             </Sidebar>
-            <UploadPlayer/>
+            <Player/>
           </UserProvider>
         </SupabaseProvider>
       </body>
