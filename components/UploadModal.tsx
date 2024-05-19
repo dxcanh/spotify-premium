@@ -54,7 +54,7 @@ const UploadModal = () => {
                 error: songError 
             } = await supabaseClient
                 .storage
-                .from('upload_songs')
+                .from('songs')
                 .upload(`song-${values.title}-${uniqueID}`, songFile, {
                     cacheControl: '3600',
                     upsert: false
@@ -85,7 +85,7 @@ const UploadModal = () => {
                 const {
                     error: supabaseError
                 } = await supabaseClient
-                    .from('upload_songs')
+                    .from('songs')
                     .insert({
                         user_id: user.id,
                         title: values.title,
@@ -160,7 +160,7 @@ const UploadModal = () => {
                     id="image"
                     type="file"
                     disabled={isLoading}
-                    accept="image/*"
+                    accept="iamge/*"
                     {...register('image', { required: true })}
                 />
                 </div>
