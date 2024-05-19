@@ -33,7 +33,7 @@ const PageContent: React.FC<PageContentProps> = ({
             gap-4
             mt-4"
         >
-            {songs.map((item) => (
+            {songs.slice(0,20).map((item) => (
                 <SongItem 
                     key={item.id}
                     onClick={(id: string) => onPlay(id)}
