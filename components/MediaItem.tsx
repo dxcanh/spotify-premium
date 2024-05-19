@@ -1,11 +1,11 @@
 "use client";
 
-import useLoadImage_upload from "@/hooks/useLoadImage";
-import { Upload } from "@/types";
+import useLoadImage from "@/hooks/useLoadImage";
+import { Song } from "@/types";
 import Image from "next/image";
 
 interface MediaItemProps {
-    data: Upload;
+    data: Song;
     onClick?: (id: string) => void;
 }
 
@@ -13,7 +13,7 @@ const MediaItem : React.FC<MediaItemProps> = ({
     data,
     onClick
 }) => {
-    const imageUrl = useLoadImage_upload(data);
+    const imageUrl = useLoadImage(data);
 
     const handleClick = () => {
         if (onClick) {
