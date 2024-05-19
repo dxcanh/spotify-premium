@@ -40,7 +40,7 @@ export default async function Home() {
       >
         <div className="flex justify-between items-center">
           <h1 className="text-white text-2xl font-semibold">
-            Playlist for you today!
+            Top hits today!
           </h1>
         </div>
         <PageContent songs={songs}/>
