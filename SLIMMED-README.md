@@ -19,10 +19,10 @@ Removed sections:
 <div align="center">
 
   <img src="assets/favicon.ico" alt="logo" width="200" height="auto" />
-  <h1>Awesome Readme Template</h1>
+  <h1>Spotify Premium</h1>
   
   <p>
-    An awesome README template for your projects! 
+    A free Spotify premium for everbody! 
   </p>
 
   
