@@ -41,7 +41,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 <h4>
     <a href="https://drive.google.com/file/d/11eunTHdIIKtQPzo5yBobs58woq2NpupV/view?usp=sharing">View Demo</a>
   <span> · </span>
-    <a href="https://drive.google.com/file/d/1VOfugn0TVlVJsodwm44Ptxg-2vrex25O/view?usp=sharing">Documentation</a>
+    <a href="https://drive.google.com/file/d/1ETpBcb96X2wkoxdhrTo711vewpara2B1/view?usp=sharing">Documentation</a>
   <span> · </span>
     <a href="https://github.com/dxcanh/spotify-premium/issues/">Report Bug</a>
   <span> · </span>
